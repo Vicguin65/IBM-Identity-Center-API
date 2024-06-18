@@ -1,15 +1,14 @@
-provider "aws"{
-    access_key = ""
-    secret_key = ""
-    region = "us-west-1"
+resource "aws_instance" "hello" {
+    ami = var.ami
+    instance_type = var.ec2_instance_type
+    tags = {
+        Name = var.ec2_instance_name
+    }
 }
 
-resource "aws_instance" "hello" {
-    ami = "ami-0ca1f30768d0cf0e1"
-    instance_type = "t2.micro"
-    tags = {
-        Name = "hello_terraform"
-    }
+output "out" {
+  value     = "xyz"
+  sensitive = true
 }
 
 #externalize 2 and 3
