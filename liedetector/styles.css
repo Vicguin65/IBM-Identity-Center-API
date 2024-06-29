@@ -1,0 +1,128 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+    font-family: 'Roboto', sans-serif; /* Use Roboto font */
+    background-color: #333333; /* Updated background color */
+    color: #a3a190; /* Updated font color */
+    line-height: 1.6;
+    margin: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: transparent; /* Transparent header background */
+    color: #a3a190; /* Updated font color */
+    padding: 20px 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center; /* Center align navigation links */
+    align-items: center;
+    border-bottom: 1px solid #a3a190; /* Add a bottom border */
+}
+
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.navbar .nav-links li {
+    margin-right: 20px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #a3a190; /* Updated font color */
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Added transition for smooth effect */
+    padding: 10px 15px; /* Padding for hover effect */
+    letter-spacing: 2px; /* Increase letter-spacing for more space between words */
+}
+
+.navbar .nav-links li a:hover {
+    color: #ffffff; /* Font color on hover */
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white background on hover */
+    border-radius: 5px; /* Rounded corners for the hover effect */
+}
+
+.hero {
+    background-color: #333333; /* Updated background color */
+    color: #a3a190; /* Updated font color */
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.footer {
+    background-color: #333333; /* Updated background color */
+    color: #a3a190; /* Updated font color */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer p {
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 10px;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .navbar .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hero .hero-title {
+        font-size: 36px;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+
+    .section p {
+        font-size: 16px;
+    }
+}
